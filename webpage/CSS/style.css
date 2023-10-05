@@ -1,0 +1,391 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'Poppins' ;
+    text-decoration: none;
+}
+body
+{
+    width:100%;
+    height:100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url('/ASSETS/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header
+{
+    width:100%;
+}
+.navigation
+{
+    width:80%;
+    margin: auto;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo
+{
+    width:100px;
+    height:100px;
+}
+.logo img
+{
+    width:100%;
+    height:100%;
+}
+.navbar ul
+{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li
+{
+    padding: 10px 20px;
+}
+.navbar .navbar-link
+{
+    text-decoration: none;
+    color:white;
+}
+.navbar ul li::after
+{
+    content:'';
+    width:0px;
+    height:2px;
+    margin: auto;
+    display: block;
+    background-color: red;
+    transition: all 0.5s;
+}
+.navbar ul li:hover::after
+{
+    width:100%;
+}
+.container
+{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.text-content
+{
+    width:60%;
+    text-align: center;
+}
+.text-content h1
+{
+    font-size: 45px;
+    color:white;
+    padding-bottom: 2%;
+}
+.text-content p
+{
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+    padding-bottom: 2%;
+}
+.text-content .btn
+{
+    width:40%;
+    margin: auto;
+    padding: 5px;
+    border: 2px solid white;
+    font-size:18px;
+    font-weight: 700;
+    color:white;
+}
+.btn:hover
+{
+    background:linear-gradient(rgba(255,0,0,0.5),rgba(255,0,0,0.8));
+    border: none;
+}
+.course
+{
+    width:80%;
+    margin:auto;
+    margin-top:55%;
+}
+.course-row
+{
+    display: flex;
+    justify-content: space-between;                    
+    padding: 50px 0px;
+}
+.course h1
+{
+    text-align: center;
+    color:rgb(30, 30, 247);
+    text-shadow: 1px 1px 5px blue;
+    padding-bottom:10px;
+}
+.course p
+{
+    text-align: center;
+}
+.course-column
+{
+    width:30%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px blue;
+    padding: 20px;
+    background-color: rgb(255, 245, 247);
+}
+.course-column p
+{
+    text-align: justify;
+}
+.course-column:hover
+{
+    box-shadow: 5px 5px 30px red;
+}
+.course-column h2
+{
+    text-align: center;
+}
+.branch
+{
+    width:80%;
+    margin:8% auto;
+}
+.branch h1
+{
+    text-align: center;
+    color:rgb(30, 30, 247);
+    text-shadow: 1px 1px 5px blue;
+    padding-bottom:10px;
+}
+.branch p
+{
+    text-align: center;
+}
+.branch-row
+{
+    display: flex;
+    justify-content: space-between;                    
+    padding: 50px 0px;
+}
+.branch-column
+{
+    width:30%;
+    position: relative;
+}
+.branch-column img
+{
+    width:100%;
+    display:block;
+    border-radius: 10px;
+}
+.branch-name
+{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0%;
+    left:0%;
+    background-color: transparent;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.branch-name:hover
+{
+    background:rgba(255, 0, 0, 0.5);
+}
+.branch-name h2
+{
+    width:100%;
+    position: absolute;
+    bottom:0%;
+    text-align: center;
+    display: block;
+    opacity: 0;
+    color:white;
+    transition:0.3s;
+}
+.branch-name:hover h2
+{
+    bottom:45%;
+    opacity:1;
+}
+.facility
+{
+    width:80%;
+    margin:8% auto;
+}
+.facility h1
+{
+    text-align: center;
+    color:rgb(30, 30, 247);
+    text-shadow: 1px 1px 5px blue;
+    padding-bottom:10px;
+}
+.facility p
+{
+    text-align: center;
+}
+.facility-row
+{
+    display: flex;
+    justify-content: space-between;                padding: 50px 0px;
+}
+.facility-column
+{
+    width:30%;
+    height:300px;
+    position: relative;
+}
+.facility-column img
+{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+.facility-content
+{
+    width:100%;
+    height:160px;
+    background-color: rgb(255, 245, 247);
+    border-radius: 10px;
+    padding:10px;
+    margin-top: 5%;
+}
+.facility-content p
+{
+    width:100%;
+    text-align: center;
+    padding:10px 20px;
+    display: block;
+    line-height: 25px;
+}
+.student-review
+{
+    width:80%;
+    margin: auto;
+    margin-top: 18%;
+}
+.student-review h1
+{
+    text-align: center;
+    color:rgb(30, 30, 247);
+    text-shadow: 1px 1px 5px blue;
+    padding-bottom:10px;
+}
+.student-review-row
+{
+    display: flex;
+    justify-content: space-between;                padding: 50px 0px;
+}
+.student-review-column
+{
+    width:45%;
+    height:250px;
+    position: relative;
+    background-color:rgb(255, 245, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    border-radius: 10px;
+}
+.student-review-column img
+{
+    width:40%;
+    height:40%;
+    border-radius:50%;
+    margin:0px 20px;
+}
+.student-review-content
+{
+    width:100%;
+    text-align: justify;
+}
+.paragraph 
+{
+    width:80%;
+    margin: auto;
+    margin-top: 8%;
+}
+.contact-location
+{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top:5%;
+}
+.location
+{
+    width:40%;
+}
+.info-content
+{
+    width:100%;
+    padding: 10px 0px;
+}
+.info-content span
+{
+    width:250px;
+    height:250px;
+    background-color: rgba(0,0,122,0.2);
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin:0px 10px;
+}
+.info-content p
+{
+    padding-left: 13%;
+}
+.info iframe
+{
+    width:100%;
+    margin-top: 5%;
+}
+.contact
+{
+    width:55%;
+}
+.name-email
+{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.name
+{
+    width:45%;
+}
+.box1
+{
+    width:100%;
+    height:40px;
+}
+.subject-message
+{
+    width:100%;
+    margin-top:3%;
+}
+.box2
+{
+    width:100%;
+    height:400px;
+}
+button
+{
+    width:50%;
+    height:50px;
+    margin:5% 25%;
+    background-color:rgba(0,0,255,0.5);
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+}
